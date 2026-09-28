@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #170f0a;
+    color: #f8f3ed;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  .font-serif-luxury {
+    font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Gold Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #fae8b6 25%, #dfb76c 50%, #c59b46 75%, #fae8b6 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine-text 6s ease-in-out infinite alternate;
+}
+
+@keyframes shine-text {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Gold Gradient Background with Shimmer */
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #e4bf79 0%, #dfb76c 40%, #c59b46 70%, #fae8b6 100%);
+  background-size: 200% 200%;
+  animation: gradient-flow 4s ease infinite;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Button Shimmer Sweep Effect */
+.shimmer-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.45) 50%,
+    transparent 80%
+  );
+  transform: rotate(30deg) translateX(-100%);
+  animation: shimmer-sweep 3.5s infinite;
+}
+
+@keyframes shimmer-sweep {
+  0% { transform: rotate(30deg) translateX(-100%); }
+  40%, 100% { transform: rotate(30deg) translateX(100%); }
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Pulse Aura Glow */
+@keyframes aura-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.15); opacity: 0.75; }
+}
+
+.animate-aura {
+  animation: aura-pulse 4s ease-in-out infinite;
+}
+
+/* Infinite Marquee */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 24s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Mask fade on both sides for smooth infinite marquee entry/exit */
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+/* Luxury Rich Brown & Gold Card */
+.brown-gold-card {
+  background: radial-gradient(circle at top right, rgba(223, 183, 108, 0.12), transparent 70%),
+              linear-gradient(180deg, rgba(45, 31, 22, 0.9) 0%, rgba(26, 17, 12, 0.95) 100%);
+  border: 1px solid rgba(223, 183, 108, 0.25);
+  backdrop-filter: blur(12px);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brown-gold-card:hover {
+  border-color: rgba(223, 183, 108, 0.65);
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 30px -8px rgba(223, 183, 108, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #170f0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #3d291d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dfb76c;
+}

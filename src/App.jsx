@@ -323,10 +323,10 @@ function App() {
 
             {/* Facebook: rokeabyrk */}
             <a
-              href="https://facebook.com/rokeabyrk"
+              href="https://www.facebook.com/share/1DbybhW7pm/"
               target="_blank"
               rel="noopener noreferrer"
-              title="rokeabyrk on Facebook"
+              title="ROKEA BY RK on Facebook"
               className="p-3 rounded-full bg-[#241710] border border-[#dfb76c]/25 text-[#d6c4b2] hover:text-[#dfb76c] hover:border-[#dfb76c] hover:scale-125 hover:-translate-y-1 transition-all duration-300 shadow-md hover:shadow-[0_0_20px_rgba(223,183,108,0.35)]"
             >
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">

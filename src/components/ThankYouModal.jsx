@@ -154,10 +154,10 @@ export default function ThankYouModal({ isOpen, onClose }) {
 
             {/* Facebook */}
             <a
-              href="https://facebook.com/rokeabyrk"
+              href="https://www.facebook.com/share/1DbybhW7pm/"
               target="_blank"
               rel="noopener noreferrer"
-              title="rokeabyrk on Facebook"
+              title="ROKEA BY RK on Facebook"
               className="p-2.5 rounded-full bg-[#1c110a] border border-[#dfb76c]/30 text-[#dfb76c] hover:bg-[#dfb76c] hover:text-black hover:scale-115 transition duration-300 shadow-md"
             >
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">

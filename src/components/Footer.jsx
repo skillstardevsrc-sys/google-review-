@@ -33,7 +33,9 @@ export default function Footer({ onOpenGiveReview, onOpenConfig, googleReviewUrl
 
             <div className="flex items-center gap-3 pt-2">
               <a 
-                href="#" 
+                href="https://instagram.com/rokeabyrk" 
+                target="_blank"
+                rel="noopener noreferrer"
                 title="Instagram"
                 className="p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-[#dfb76c] hover:border-[#dfb76c]/40 transition"
               >
@@ -42,7 +44,9 @@ export default function Footer({ onOpenGiveReview, onOpenConfig, googleReviewUrl
                 </svg>
               </a>
               <a 
-                href="#" 
+                href="https://www.facebook.com/share/1DbybhW7pm/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 title="Facebook"
                 className="p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-[#dfb76c] hover:border-[#dfb76c]/40 transition"
               >
@@ -51,16 +55,18 @@ export default function Footer({ onOpenGiveReview, onOpenConfig, googleReviewUrl
                 </svg>
               </a>
               <a 
-                href="mailto:contact@rokeabyrk.com" 
+                href="mailto:rokeabyrk@gmail.com" 
                 title="Contact Mail"
                 className="p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-[#dfb76c] hover:border-[#dfb76c]/40 transition"
               >
                 <Mail className="w-4 h-4" />
               </a>
               <a 
-                href="#" 
+                href="https://wa.me/917010394051" 
+                target="_blank"
+                rel="noopener noreferrer"
                 title="WhatsApp Concierge"
-                className="p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-[#dfb76c] hover:border-[#dfb76c]/40 transition"
+                className="p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-emerald-400 hover:border-emerald-500/40 transition"
               >
                 <MessageCircle className="w-4 h-4" />
               </a>
